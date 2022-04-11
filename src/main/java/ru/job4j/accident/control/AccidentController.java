@@ -14,7 +14,7 @@ public class AccidentController {
         this.accidentService = accidentService;
     }
 
-    @GetMapping("accident")
+    @GetMapping("accidents")
     public String accident(Model model) {
         model.addAttribute("accidents", accidentService.findAll());
         return "index";

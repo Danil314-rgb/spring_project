@@ -11,8 +11,6 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(Model model) {
-        List<String> users = List.of("Tom", "Bob", "Lol");
-        model.addAttribute("users", users);
         return "index";
     }
 }
